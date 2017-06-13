@@ -1,0 +1,31 @@
+<router-outlet></router-outlet>
+
+<div class="container">
+	<div class="full-content-center">
+		<p class="text-center">
+		</p>
+		<div class="login-wrap animated flipInX">
+			<div class="login-block">
+				<img src="assets/img/logo.jpg" class="img-circle not-logged-avatar">
+				<form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+					<div class="form-group login-input">
+						<i class="fa fa-user overlay"></i>
+						<input type="text" id="usuario" formControlName="usuario" class="form-control text-input" placeholder="Usuário" required="true">
+					</div>
+					<error-messages [control]="usuario"></error-messages>
+					<div class="form-group login-input">
+						<i class="fa fa-key overlay"></i>
+						<input type="password" id="senha" formControlName="senha" class="form-control text-input" placeholder="********" required="true">
+					</div>
+					<error-messages [control]="senha"></error-messages>
+					<div class="row">
+						<div class="col-sm-12">
+							<button type="submit" [disabled]="!loginForm.valid" class="btn btn-success btn-block">Logar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</div>

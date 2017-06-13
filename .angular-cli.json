@@ -1,0 +1,120 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "ceuma"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "./assets/libs/jqueryui/ui-lightness/jquery-ui-1.10.4.custom.min.css",
+        "./assets/libs/bootstrap/css/bootstrap.min.css",
+        "./assets/libs/font-awesome/css/font-awesome.min.css",
+        "./assets/libs/fontello/css/fontello.css",
+        "./assets/libs/animate-css/animate.min.css",
+        "./assets/libs/nifty-modal/css/component.css",
+        "./assets/libs/magnific-popup/magnific-popup.css",
+        "./assets/libs/ios7-switch/ios7-switch.css",
+        "./assets/libs/pace/pace.css",
+        "./assets/libs/sortable/sortable-theme-bootstrap.css",
+        "./assets/libs/bootstrap-datepicker/css/datepicker.css",
+        "./assets/libs/jquery-icheck/skins/all.css",
+        "./assets/libs/jquery-notifyjs/styles/metro/notify-metro.css",
+        "./assets/libs/prettify/github.css",
+        "./assets/css/style.css",
+        "./assets/css/style-responsive.css",
+        "../node_modules/datatables.net-dt/css/jquery.dataTables.css"
+      ],
+      "scripts": [
+        "./assets/libs/jquery/jquery-1.11.1.min.js",
+        "./assets/libs/bootstrap/js/bootstrap.min.js",
+        "./assets/libs/jqueryui/jquery-ui-1.10.4.custom.min.js",
+        "./assets/libs/jquery-ui-touch/jquery.ui.touch-punch.min.js",
+        "./assets/libs/jquery-detectmobile/detect.js",
+        "./assets/libs/jquery-animate-numbers/jquery.animateNumbers.js",
+        "./assets/libs/ios7-switch/ios7.switch.js",
+        "./assets/libs/fastclick/fastclick.js",
+        "./assets/libs/jquery-blockui/jquery.blockUI.js",
+        "./assets/libs/bootstrap-bootbox/bootbox.min.js",
+        "./assets/libs/jquery-slimscroll/jquery.slimscroll.js",
+        "./assets/libs/jquery-sparkline/jquery-sparkline.js",
+        "./assets/libs/nifty-modal/js/classie.js",
+        "./assets/libs/nifty-modal/js/modalEffects.js",
+        "./assets/libs/sortable/sortable.min.js",
+        "./assets/libs/bootstrap-fileinput/bootstrap.file-input.js",
+        "./assets/libs/bootstrap-select/bootstrap-select.min.js",
+        "./assets/libs/bootstrap-select2/select2.min.js",
+        "./assets/libs/magnific-popup/jquery.magnific-popup.min.js",
+        "./assets/libs/pace/pace.min.js",
+        "./assets/libs/jquery-notifyjs/notify.min.js",
+        "./assets/libs/jquery-notifyjs/styles/metro/notify-metro.js",
+        "./assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.js",
+        "./assets/libs/jquery-icheck/icheck.min.js",
+        "./assets/libs/prettify/prettify.js",
+        "./assets/js/init.js",
+        "./assets/libs/d3/d3.v3.js",
+        "./assets/libs/rickshaw/rickshaw.min.js",
+        "./assets/libs/raphael/raphael-min.js",
+        "./assets/libs/morrischart/morris.min.js",
+        "./assets/libs/jquery-knob/jquery.knob.js",
+        "./assets/libs/jquery-jvectormap/js/jquery-jvectormap-1.2.2.min.js",
+        "./assets/libs/jquery-jvectormap/js/jquery-jvectormap-us-aea-en.js",
+        "./assets/libs/jquery-clock/clock.js",
+        "./assets/libs/jquery-easypiechart/jquery.easypiechart.min.js",
+        "./assets/libs/jquery-weather/jquery.simpleWeather-2.6.min.js",
+        "./assets/libs/bootstrap-xeditable/js/bootstrap-editable.min.js",
+        "./assets/libs/bootstrap-calendar/js/bic_calendar.min.js",
+        "./assets/js/apps/calculator.js",
+        "./assets/js/apps/todo.js",
+        "./assets/js/apps/notes.js",
+        "./assets/libs/jquery-datatables/js/jquery.dataTables.min.js",
+        "./assets/libs/jquery-datatables/js/dataTables.bootstrap.js",
+        "./assets/libs/jquery-datatables/extensions/TableTools/js/dataTables.tableTools.min.js",
+        "./assets/js/pages/datatables.js",
+        "../node_modules/datatables.net/js/jquery.dataTables.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
