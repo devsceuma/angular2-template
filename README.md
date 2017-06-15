@@ -1,6 +1,6 @@
 # Ceuma
 
-Este projeto foi gerado na versão 1.1.1 do CLI [Angular CLI](https://github.com/angular/angular-cli).
+Este projeto foi gerado na versão 1.1.1 do [Angular CLI](https://github.com/angular/angular-cli).
 
 ## NODE
 
